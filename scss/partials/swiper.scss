@@ -5,7 +5,6 @@
     height: 100%;
     margin: 0;
   }
-  
   .swiper-slide {
     text-align: center;
     /* background: rgb(175, 175, 175); */
@@ -13,15 +12,14 @@
     justify-content: center;
     align-items: center;
     // background-color: $white-1;
+    overflow: hidden;
   }
-  
   .swiper-image {
     background-size:cover;
     background-position: center;
     width: 100%;
     height: 100%;
     text-align: left;
-    // border: 2px solid blue;
   }
   .swiper-button-prev {
     font-size: 1.5em;
@@ -56,14 +54,6 @@
       animation: swiper-next 2s cubic-bezier(0.25,0.46,0.45,0.94) forwards infinite;
       animation-delay: .5s;
     }
-  }
-  .swiper-pagination-fraction {
-    font-family: $type-body;
-    font-size: 1.5em;
-    text-align: right;
-    font-weight: 500;
-    width: 100%;
-    right: 12%; left: auto; bottom: 55%;
   }
 
   // HERO TYPOGRAPHY
@@ -126,19 +116,9 @@
       margin-top: 1em;
       font-size: clamp(1em,2vw,2em);
     }
-    p.custom-pagination {
-      // text-align: right;
-      text-shadow: white;
-    }
-    .button {
-      // width: 100%;
-      text-align: center;
-      // margin: 25% auto;
-      background-color: rgba(white,.3);
-    }
-    .button-white { 
-      background-color: rgba(black,.1);
-      text-align: center;
+    .award-label {
+      top: -20%; right: -10%;
+      margin: 1em;
     }
   }
     .dark .swiper-image h1,
@@ -146,24 +126,23 @@
     .dark  {
       color: white;
     }
-    
-    .dark .swiper-image .button {
-      color: white;
-      border-color: white;
-    }
 }
 
   // Slider Hero Light/Dark
 
-  header[data-slidecolor="light"] a,
-  header[data-slidecolor="light"] svg,
-  header[data-slidecolor="light"] .site-identity a svg
+  header[data-slidecolor="light"] a
   {color: rgba(0,0,0,1); fill:rgba(0,0,0,1); }
 
-  header[data-slidecolor="dark"] a,
-  header[data-slidecolor="dark"] svg,
-  header[data-slidecolor="dark"] .site-identity a svg
+  header[data-slidecolor="light"] svg,
+  header[data-slidecolor="light"] .site-identity a svg 
+  {color: $turq; fill: $turq;}
+
+  header[data-slidecolor="dark"] a
    {color: rgb(255,255,255); fill: rgb(255,255,255);}
+
+  header[data-slidecolor="dark"] svg,
+  header[data-slidecolor="dark"] .site-identity a svg 
+  {color: $gold; fill: $gold;}
 
   [data-slidecolor="light"] .swiper-button-prev,
   [data-slidecolor="light"] .swiper-button-next, 
@@ -363,6 +342,8 @@
 
   #book-swiper {
     margin: 0;
+    padding: 0;
+    background-image: linear-gradient($white-1, $grey-1);
     .swiper-slide {
       img {height: 120vh; width: auto;}
       text-align: center;
@@ -409,14 +390,35 @@
       color: $turq;
       top: auto;
       bottom: 5%;
-      left: auto;
-      right: 15%;
+      left: 15%;
+      right:auto;
+      font-size: 1em;
   }
   .swiper-button-next {
     color: $turq;
     top: auto;
     bottom: 5%;
     left: auto;
-    right: 10%;
+    right: 15%;
+    font-size: 1em;
+    }
+  }
+
+  #gems-swiper {
+    .swiper-text {
+      background: white;
+      text-align: center;
+      margin-bottom: .5em;
+      // border: 1px solid green;
+    }
+    .swiper-button-prev {
+      top: auto; bottom: 0;
+      left: 5%; right:auto;
+      font-size: 1em;
+  }
+  .swiper-button-next {
+    top: auto; bottom: 0;
+    left: auto; right: 5%;
+    font-size: 1em;
     }
   }

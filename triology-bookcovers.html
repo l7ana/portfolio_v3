@@ -66,7 +66,7 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href="work.html">Work</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -74,12 +74,11 @@
         </div>
     </header>
 
-    <section class="project-top prime" data-inview="no">
+    <section class="project-top" data-inview="no">
         <div class="container">
             <h2 class="sectionhead" data-inview="no">Featured Project:</h2>
             <h1 data-inview="no">&#8220;This is Love&#8221; Triology <br> Book Covers Design</h1>
-            <p class="subhead" data-inview="no">An unsual book triology from Radiotopia's "This is Love" Podcast
-                featuring <br> stories of snails, ugliness, and cannabilism.</p>
+            <p class="subhead" data-inview="no">Stories of snails, ugliness, and cannabilism.</p>
             <div class="arrow-down">
                 <a href="#intro" class="scroll">
                     Discover Love
@@ -89,10 +88,25 @@
                 </a>
             </div>
         </div>
+        <div class="project-top-wrapper">
+            <img src="./img/triologybooks/spiral.png" alt="" id="triology-project-top">
+        </div>
     </section>
 
     <section class="intro" id="intro">
         <div class="container">
+            <div class="row with-img award gold">
+                <div class="column one-fourth">
+                    <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_4nvqbm44.json"
+                        background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="column three-fourths">
+                    <p>This project is a <strong>Pele Gold</strong> Award Winner & an <strong>AAF National Silver Award
+                            Winner.</strong>
+                    </p>
+                </div>
+            </div>
             <div class="row">
                 <div class="column three-fourths" data-inview="no">
                     <h2>Introduction</h2>
@@ -123,21 +137,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="case-study" id="book-swiper">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide dark"><img src="./img/triologybooks/ThisIsLove_1.jpg" alt=""></div>
-                <div class="swiper-slide dark"><img src="./img/triologybooks/ThisIsLove_2.jpg" alt=""></div>
-                <div class="swiper-slide dark"><img src="./img/triologybooks/ThisIsLove_3.jpg" alt=""></div>
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -201,22 +200,18 @@
         </div>
     </section>
 
-    <section id="welcome">
-        <div class="container">
-            <div class="row">
-                <div class="column one-third"><img src="img/LianaYoung.jpg" alt=""></div>
-                <div class="column two-thirds">
-                    <h2 class="sectionhead">Hi There!</h2>
-                    <h1>I'm Liana.</h1>
-                    <h3>Graphic Designer, type-enthusiast, occasional illustrator, and copy-writer. I'm a grid-abider
-                        <i>and</i> grid-breaker.
-                    </h3>
-                    <h4>Oh, the duality.</h4>
-                    <a href="work.html" class="button-white">My Portfolio</a><a href="about.html"
-                        class="button-white">Learn About Me</a><a href="contact.html" class="button-white">Let's
-                        Chat!</a>
-                </div>
+    <section class="case-study" id="book-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide dark"><img src="./img/triologybooks/ThisIsLove_1.jpg" alt=""></div>
+                <div class="swiper-slide dark"><img src="./img/triologybooks/ThisIsLove_2.jpg" alt=""></div>
+                <div class="swiper-slide dark"><img src="./img/triologybooks/ThisIsLove_3.jpg" alt=""></div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -245,6 +240,8 @@
     <script src="js/scroll.js"></script>
     <!-- Main JS -->
     <script src="js/script.js"></script>
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
